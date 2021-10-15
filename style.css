@@ -25,11 +25,14 @@ button {
     color: white;
 }
 
-[data-number], #decimal {
+[data-number],
+#decimal {
     background-color: #4d4d4d;
 }
 
-#lparenthesis, #rparenthesis, #delete {
+#lparenthesis,
+#rparenthesis,
+#delete {
     background-color: #999999;
 }
 
@@ -78,7 +81,7 @@ body {
     left: 50%;
     top: 15%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     width: 315px;
 }
 
@@ -100,18 +103,37 @@ body {
     position: absolute;
     bottom: 70px;
     right: 0;
-    margin: 18px;  
+    margin: 18px;
 }
 
-.btn:active, #delete:active, .bottom:active, #clear:active, #decimal:active, #equals:active {
-    filter:brightness(50%);
+.btn:active,
+#delete:active,
+.bottom:active,
+#clear:active,
+#decimal:active,
+#equals:active {
+    filter: brightness(50%);
     transition: filter 0.1s;
     transform: scale(1.05);
     transition: transform 0.1s;
 }
 
-.btn:hover, #delete:hover, .bottom:hover, #clear:hover, #decimal:hover, #equals:hover {
+.btn:hover,
+#delete:hover,
+.bottom:hover,
+#clear:hover,
+#decimal:hover,
+#equals:hover {
     border-style: solid;
     border-width: 3px;
     border-color: #6906ff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
 }
