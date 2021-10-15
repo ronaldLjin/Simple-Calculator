@@ -55,7 +55,10 @@ num[9].addEventListener('click', () => {
 
 appendNumber = (item) => {
     if (displayValue.toString() === '0') {
-        displayValue = item;
+        displayValue = item.toString();
+        mainNum.textContent = displayValue;
+    } else if (typeof displayValue == 'number') {
+        displayValue = item.toString();
         mainNum.textContent = displayValue;
     } else if (displayValue.toString().length < 9 && displayValue < 100000000) {
         displayValue += "" + item;
@@ -76,9 +79,8 @@ for (let i = 0; i < operation.length; i++) {
         operator = operation[i].textContent;
         subValue = displayValue +  operation[i].textContent;
         subNum.textContent = subValue;
-        displayValue = 0;
+        displayValue = Number(displayValue);
         equals.disabled = false;
-
     });
 
     operationArray.push(function() {
@@ -86,7 +88,7 @@ for (let i = 0; i < operation.length; i++) {
         operator = operation[i].textContent;
         subValue = displayValue + operation[i].textContent;
         subNum.textContent = subValue;
-        displayValue = 0;
+        displayValue = Number(displayValue);
         equals.disabled = false;
     })
 };
