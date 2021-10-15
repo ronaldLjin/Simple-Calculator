@@ -79,10 +79,10 @@ body {
 #calculator {
     position: absolute;
     left: 50%;
-    top: 15%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 315px;
+    bottom: 57%;
 }
 
 body {
