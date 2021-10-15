@@ -1,0 +1,116 @@
+.buttons {
+    width: 315px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #808080;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    z-index: 10;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+button {
+    width: 60px;
+    margin: 6px;
+    height: 60px;
+    border-style: none;
+    border-radius: 6px;
+    font-size: 17pt;
+    color: white;
+}
+
+[data-number], #decimal {
+    background-color: #4d4d4d;
+}
+
+#lparenthesis, #rparenthesis, #delete {
+    background-color: #999999;
+}
+
+#clear {
+    background-color: #ff8080;
+}
+
+[data-operator] {
+    background-color: #af79ff;
+}
+
+#equals {
+    background-color: #afe9af;
+}
+
+#display {
+    width: 315px;
+    background-color: #6906ff;
+    color: white;
+    height: 170px;
+    background-image: linear-gradient(to top right, #6906ff, #b27eff);
+    position: relative;
+    top: 20px;
+    border-radius: 20px 20px 0px 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.number {
+    text-align: end;
+}
+
+.top {
+    margin-top: 25px;
+    width: 132px;
+}
+
+.bottom {
+    margin-bottom: 25px;
+}
+
+#calculator {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+
+body {
+    background-color: #4d4d4d;
+}
+
+#mainNum {
+    font-size: 36pt;
+    font-weight: 100;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    margin: 18px;
+}
+
+#subNum {
+    font-weight: 100;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    margin: 18px;  
+}
+
+.btn:active, #delete:active, .bottom:active, #clear:active, #decimal:active, #equals:active {
+    filter:brightness(50%);
+    transition: filter 0.1s;
+    transform: scale(1.05);
+    transition: transform 0.1s;
+}
+
+.btn:hover, #delete:hover, .bottom:hover, #clear:hover, #decimal:hover, #equals:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #6906ff;
+}
